@@ -10,6 +10,13 @@ namespace test3
     {
         static void Main(string[] args)
         {
+            int  [] myArray  = {10, 2, 3, 5};
+            
+            for (int i = myArray.Length-1; i >= 0; i--)
+            {
+                Console.WriteLine(myArray[i]);
+            }
+              
         }
     }
 }
