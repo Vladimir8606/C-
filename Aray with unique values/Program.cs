@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace test3
+namespace Aray_with_unique_values
 {
     internal class Program
     {
@@ -32,7 +32,7 @@ namespace test3
 
 
             }
-            int [] uniqueArray = new int [unique_count];
+            int[] uniqueArray = new int[unique_count];
             int k = 0;
 
 
@@ -56,8 +56,9 @@ namespace test3
                     k++;
                 }
             }
-            for (int z=0; z<uniqueArray.Length; z++)
+            for (int z = 0; z < uniqueArray.Length; z++)
                 Console.WriteLine(uniqueArray[z]);
+
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace test2
 {
@@ -6,29 +7,10 @@ namespace test2
     {
         static void Main(string[] args)
         {
-            int b;
-            string str, str2;
-            double rate = 18.30;
-            Console.WriteLine("Enter carrency you want to change USD or ZAR: ");
-            str = Console.ReadLine();
-            Console.WriteLine("Enter amount: ");
-            str2 = Console.ReadLine();
-            b=Convert.ToInt32(str2);
-            if (str == "USD") 
-            {
-                double result = b * rate;
-                Console.WriteLine("You'll recive " + result + "ZAR");
-            }
-            else if (str == "ZAR")
-            {
-                double result = b/rate;
-                Console.WriteLine("You'll recive " + result + "USD");
-
-            }
-            else
-            {
-                Console.WriteLine("Incorrect carrency");
-            }
+            int[] myArray = { 10, 2, 3, 5, 10, 66, 34, 23, 3, 2 };
+            int[] result = myArray.Distinct().ToArray();
+            for(int i = 0; i < result.Length; i++)
+                Console.WriteLine(result[i]);
 
         }
     }

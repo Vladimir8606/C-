@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Arrays
 {
@@ -15,11 +12,15 @@ namespace Arrays
 
             //Fill array
 
-            int[] myArray = new int[10];
+            Console.Write("Enter the length of array: ");
+            int number = int.Parse(Console.ReadLine());
+
+
+            int[] myArray = new int[number];
 
             for (int i = 0; i < myArray.Length; i++)
             {
-                Console.WriteLine("Enter number " + i);
+                Console.Write($"Enter number {i}:\t");
                 myArray[i] = int.Parse(Console.ReadLine()); 
             }
 
@@ -56,7 +57,7 @@ namespace Arrays
 
             int lowestValue = myArray[0];
 
-            for (int i = 0; i < myArray.Length; i++)
+            for (int i = 1; i < myArray.Length; i++)
             {
                 if (myArray[i] <lowestValue)
                     lowestValue = myArray[i];
